@@ -1,0 +1,10 @@
+<%= form_for @new_video do |f| %>
+    <%= f.text_field :name %>
+    <%= f.file_field :video %>
+    <%= f.submit 'Upload' %>
+<% end %>
+
+
+<% @videos.each do |video| %>
+    <div><%= video.name %></div>
+<% end %>
