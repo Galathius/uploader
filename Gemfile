@@ -6,16 +6,14 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'carrierwave'
-
 gem 'omniauth'
 gem 'omniauth-facebook'
-
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-
 gem 'grape'
 gem 'kaminari'
+gem 'rack-attack'
 
 group :development do
   gem 'spring'

@@ -4,7 +4,17 @@
     <%= f.submit 'Upload' %>
 <% end %>
 
-
-<% @videos.each do |video| %>
-    <div><%= video.name %></div>
-<% end %>
+<table>
+  <thead>
+    <tr><td>Name</td><td>Link</td></tr>
+  </thead>
+  <tbody>
+      <% @videos.each do |video| %>
+          <% video_url = root_url + video.url %>
+          <tr>
+            <td><%= video.name %></td>
+            <td><%= link_to video_url, video_url %></td>
+          </tr>
+      <% end %>
+  </tbody>
+</table>
